@@ -1,10 +1,11 @@
 // No cambies los nombres de las funciones.
-
+// ejercicios terminados nuevo push
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
   return array[0];
 }
+
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
@@ -12,11 +13,13 @@ function devolverUltimoElemento(array) {
   return array[array.length - 1];
 }
 
+
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return array.length;
 }
+
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -32,6 +35,7 @@ function incrementarPorUno(array) {
 
 }
 
+
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
@@ -39,6 +43,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   array[array.length] = elemento;
   return array;
 }
+
+
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -49,6 +55,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   return array;
 }
 
+
+
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
@@ -56,6 +64,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   return palabras.join(' ');
+
 }
 
 function arrayContiene(array, elemento) {
@@ -70,8 +79,10 @@ function arrayContiene(array, elemento) {
   return false;
 }
 
+
+
 function agregarNumeros(numeros) {
-  // "array" debe ser una matriz de enteros (int/integers)
+  // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0;
@@ -82,12 +93,15 @@ function agregarNumeros(numeros) {
 
 }
 
+
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return agregarNumeros(resultadosTest) / resultadosTest.length;
+
+return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
+
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -100,23 +114,26 @@ function numeroMasGrande(numeros) {
     }
   }
   return maximo;
+
 }
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-  // Si no se pasan argumentos devuelve 0
-  // Si se pasa un argumento, simplemente devuélvelo
-  // Tu código:
+  // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+  // Escribe tu código aquí:
   if(arguments.length < 1) return 0;
   var total = 1;
   for(var i = 0; i < arguments.length; i++) {
     total = total * arguments[i];
   }
   return total;
+
 }
 
+
 function cuentoElementos(arreglo){
-  //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
+  //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let contador = 0;
   for (let i = 0; i < arreglo.length ; i++) {
@@ -125,7 +142,9 @@ function cuentoElementos(arreglo){
     }
   }
   return contador
+
 }
+
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
@@ -136,7 +155,9 @@ function diaDeLaSemana(numeroDeDia) {
     return "Es fin de semana"
   }
   return "Es dia Laboral"
+
 } 
+
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
@@ -147,7 +168,9 @@ function empiezaConNueve(n) {
     return true
   }
   return false
+
 }
+
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
@@ -159,7 +182,9 @@ function todosIguales(arreglo) {
     }
   }
   return true
+
 } 
+
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
@@ -178,7 +203,9 @@ function mesesDelAño(array) {
   else {
       return nuevoArray;
   }
+
 }
+
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
@@ -191,7 +218,9 @@ function mayorACien(array) {
     }
   }
   return nuevoArray;
+
 }
+
 
 function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -216,7 +245,9 @@ function breakStatement(numero) {
   else {
       return array;
   }
+
 }
+
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
@@ -235,6 +266,7 @@ function continueStatement(numero) {
     }
   }
   return array;
+
 }
 
 
