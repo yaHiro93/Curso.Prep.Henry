@@ -21,8 +21,8 @@ function mayoriaDeEdad(edad) {
   else {
     return "Not allowed";
   }
-}
-
+} 
+  
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -38,7 +38,7 @@ function conection(status) {
   else {
     return "Offline";
   }
-}
+} 
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -47,15 +47,10 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if(idioma === 'aleman') {
-    return 'Guten Tag!';
-  } else if (idioma === 'mandarin') {
-    return 'Ni Hao!';
-  } else if (idioma === 'ingles') {
-    return 'Hello!';
-  } else {
-    return 'Hola!';
-  }
+  if (idioma === "aleman") {return "Guten Tag!";}
+  else if (idioma ==="mandarin") {return "Ni Hao!";}
+  else if (idioma ==="ingles") {return "Hello!";}
+  else {return "Hola!";}
 }
 
 function colors(color) {
@@ -65,7 +60,8 @@ function colors(color) {
   //En caso que el color recibido sea "green", devuleve --> "This is green"
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
-  //Usar el statement Switch.
+  //Usar el statement Switch.  
+  
   switch(color) {
     case "blue":
       return "This is blue";
@@ -77,21 +73,23 @@ function colors(color) {
       return "This is orange";
     default: 
     return "Color not found";
-  }
+ }
 }
 
 function esDiezOCinco(numero) {
-    // Devuelve "true" si "numero" es 10 o 5
-    // De lo contrario, devuelve "false"
-    // Tu código:
-    return numero === 10 || numero === 5;
+  // Devuelve "true" si "numero" es 10 o 5
+  // De lo contrario, devuelve "false"
+  // Tu código:
+  return numero === 10 || numero === 5;
+
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20;
+  return numero<50  &&  numero >20
+  
 }
 
 function esEntero(numero) {
@@ -102,7 +100,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0;
+  return numero % 1 ===0 ;
 }
 
 function fizzBuzz(numero) {
@@ -140,13 +138,13 @@ function operadoresLogicos(num1, num2, num3) {
   }
 }
 
+
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  // Test
   if( numero < 2) return false;
   if(numero === 2) return true;
   for(var i = 2; i < numero; i++) {
@@ -156,7 +154,6 @@ function esPrimo(numero) {
   }
   return true;
 }
-
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
@@ -170,16 +167,17 @@ function esVerdadero(valor){
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí     
+  //Escribe tu código aquí   
   let arrayTablaDel6 = []
   for (let i = 0; i < 11; i++) {
         arrayTablaDel6.push(6 * i)
   }
   return arrayTablaDel6
+
 }
 
 function tieneTresDigitos(numero){
-  //Leer un número entero y determinar si tiene 3 dígitos.
+  //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   if(numero > 99 && numero < 1000){
     return true
@@ -199,7 +197,9 @@ function doWhile(numero) {
   }
   while(i < 8);
   return a;
+
 }
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
