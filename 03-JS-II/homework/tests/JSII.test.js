@@ -178,7 +178,7 @@ describe ('esVerdadero(valor)', function() {
 
 describe ('tablaDelSeis()', function() {
   it('should return multiplication table of 6', function() {
-    expect(tablaDelSeis()).toEqual([0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+    expect(tablaDelSeis()).toEqual([0 , 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
   });
 });
 

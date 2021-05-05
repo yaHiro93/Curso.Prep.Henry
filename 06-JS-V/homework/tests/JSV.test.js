@@ -52,3 +52,4 @@ describe('agregarMetodo(Persona)', function() {
 		expect(persona.datos()).toBe('Juan, 22 años');
 	});
 });
+
